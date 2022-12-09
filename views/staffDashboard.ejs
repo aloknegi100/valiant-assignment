@@ -16,7 +16,8 @@
     <td><%=student.mobile%></td>
     <td>
       <a href="/resume/<%=student.id  %> " id="download-link"
-        ><%=student.resume%> <i class="fa-solid fa-file-pdf"></i
+        ><%=student.resume%> <i class="fa-solid fa-file-pdf"></i>
+        <i class="fa-solid fa-download"></i
       ></a>
     </td>
     <td><%=student.updatedAt.toISOString().split('T')[0]%></td>
