@@ -1,0 +1,23 @@
+table {
+  background-color: rgba(232, 183, 7, 0.408);
+  width: 100%;
+  border: 1px solid white;
+}
+table th {
+  border: 1px solid white;
+  background-color: brown;
+}
+table td {
+  border: 1px solid white;
+  padding: 4px;
+}
+#download-link {
+  padding: 3px;
+  color: white;
+  background-color: brown;
+  border: none;
+}
+#download-link :hover {
+  background-color: aliceblue;
+  transform: scale(1.1);
+}

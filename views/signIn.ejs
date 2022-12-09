@@ -1,0 +1,42 @@
+<link rel="stylesheet" href="/css/signUp.css" />
+
+<div id="wrapper">
+  <h1>Student Log In</h1>
+  <div id="signUp">
+    <form action="/student/sign-in" method="post" id="student-form">
+      <input
+        type="email"
+        placeholder="Enter your email"
+        name="email"
+        required
+      />
+      <input
+        type="password"
+        placeholder="Enter password"
+        name="password"
+        required
+      />
+
+      <button type="submit">Sign In</button>
+    </form>
+    <form action="/staff/sign-in" method="post" id="staff-form">
+      <input
+        type="email"
+        placeholder="Enter your email"
+        name="email"
+        required
+      />
+      <input
+        type="password"
+        placeholder="Enter password"
+        name="password"
+        required
+      />
+
+      <button type="submit">Sign In</button>
+    </form>
+  </div>
+  <button id="switch">Sign In As Staff</button>
+  <a href="/">Go to Sign Up Page</a>
+</div>
+<script src="/javascript/signIn.js"></script>

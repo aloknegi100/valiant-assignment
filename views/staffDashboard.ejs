@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="/css/staffHome.css" />
+<h1>Staff Dashboard</h1>
+<table>
+  <tr>
+    <th>Student Name</th>
+    <th>Student Email</th>
+    <th>Student Mobile</th>
+    <th>Student Resume</th>
+    <th>Last Update Date</th>
+    <th>Last Update time</th>
+  </tr>
+  <%for(student of students){ %>
+  <tr>
+    <td><%=student.name%></td>
+    <td><%=student.email%></td>
+    <td><%=student.mobile%></td>
+    <td>
+      <a href="/resume/<%=student.id  %> " id="download-link"
+        ><%=student.resume%> <i class="fa-solid fa-file-pdf"></i
+      ></a>
+    </td>
+    <td><%=student.updatedAt.toISOString().split('T')[0]%></td>
+    <td>
+      <%=student.updatedAt.toISOString().split('T')[1].split('.')[0].slice(0,5)%>
+    </td>
+  </tr>
+  <% } %>
+</table>
+<a href="/signOut">LOG OUT</a>

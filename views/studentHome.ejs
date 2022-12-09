@@ -1,0 +1,24 @@
+<h1>Student home</h1>
+<form
+  enctype="multipart/form-data"
+  action="/student/upload/<%=userId%>"
+  method="post"
+  id="upload-form"
+>
+  <input type="text" placeholder="Your Name" name="name" value="<%=name%>" />
+  <input type="text" placeholder="Your Email" name="email" value="<%=email%>" />
+  <input
+    type="text"
+    placeholder="Your Mobile"
+    name="mobile"
+    value="<%=mobile%>"
+  />
+
+  <input type="file" name="resume" />
+  <% if(resume){ %>
+  <h2><%=resume %> <i class="fa-solid fa-file-pdf"></i></h2>
+  <% }%>
+
+  <button type="submit" id="up">Update</button>
+</form>
+<a href="/signOut">LOG OUT</a>

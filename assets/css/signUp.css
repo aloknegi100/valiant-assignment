@@ -1,0 +1,23 @@
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#student-form {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+#staff-form {
+  display: none;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+#s:hover {
+  background-color: orangered;
+}
+#switch:hover {
+  background-color: orangered;
+}
