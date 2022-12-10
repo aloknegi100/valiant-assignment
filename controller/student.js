@@ -22,9 +22,12 @@ module.exports.studentUpload = async (req, res) => {
   student.mobile = req.body.mobile;
   student.email = req.body.email;
   student.name = req.body.name;
-  if (req.file) {
+  if (req.file && req.file.mimetype === "application/pdf") {
+    console.log(req.file);
     student.path = req.file.path;
     student.resume = req.file.originalname;
+  } else {
+    console.log("please upload pdf only");
   }
   await student.save();
   console.log(student);
